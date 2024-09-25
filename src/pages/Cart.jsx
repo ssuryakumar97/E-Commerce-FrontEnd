@@ -217,12 +217,13 @@ function Cart() {
     }
   };
 
-  const handleUpdateAddress = () => {
+  const handleUpdateAddress = (close) => {
     // console.log(contactNo, address)
     setUpdateContact({
       address,
       contactNo,
     });
+    close()
   };
 
   // console.log(updateContact)
@@ -259,7 +260,7 @@ function Cart() {
           </TopTexts>
           <Popup
             trigger={<TopButton>ADD ADDRESS</TopButton>}
-            position="left center"
+            position="bottom center"
           >
             {(close) => (
               <div>
@@ -278,8 +279,7 @@ function Cart() {
                   onChange={(e) => setAddress(e.target.value)}
                   value={address}
                 />
-                <button onClick={handleUpdateAddress}>Update</button>
-                <button onClick={close}>Close</button>
+                <button onClick={() =>handleUpdateAddress(close)}>Update</button>
               </div>
             )}
           </Popup>
