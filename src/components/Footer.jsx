@@ -132,7 +132,7 @@ function Footer() {
         </ContactItem>
         <ContactItem>
           <CallIcon style={{ marginRight: "10px" }} />
-          +91 44 2245 1124
+          +91 44 7896 5432
         </ContactItem>
         <ContactItem>
           <MailOutlineIcon style={{ marginRight: "10px" }} />
